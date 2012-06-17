@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="./images/favicon.ico">
+<meta NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW,NOARCHIVE">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="jQueryの実験場です。">
+<meta name="viewport" content="width=device-width">
+<meta name="author" content="">
+<title>jQuery実験場</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="./js/easing.js"></script>
+<script src="./js/jQuery.alttip.js"></script>
+<style>
+.alt_text{
+	width:200px;
+	height:30px;
+	padding:10px;
+	background:#999;
+	display:none;
+	position:absolute;
+	}
+
+</style>
+<script>
+(function(jQuery){
+	$(window).bind('load',function(){
+		$('img').alttip();
+		});
+	})(jQuery);
+</script>
+
+</head>
+
+<body>
+
+<img src="http://dummyimage.com/100x100" alt="test">
+<img src="http://dummyimage.com/100x100" alt="hoge">
+<img src="http://dummyimage.com/100x100" alt="moe">
+<img src="http://dummyimage.com/100x100" alt="more">
+<div class="alt_text"></div>
+</body>
+</html>
